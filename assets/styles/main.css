@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  color: #283747;
+  /* color: #283747; */
   font-size: 18px;
 
   /* Good */
@@ -53,7 +53,7 @@ body {
 header,
 footer {
   color: white;
-  background: rgba(243, 211, 107, 0.15);
+  background: rgba(243, 211, 107, 1);
   text-align: center;
   text-transform: uppercase;
   padding: 25px;
@@ -97,9 +97,9 @@ footer {
 }
 
 section {
-  margin: 30px;
+  margin: 25px;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .section-title {
   font-weight: 700;
@@ -132,6 +132,7 @@ article {
   background-color: rgb(88, 74, 68);
 }
 #section-4 {
+  color: rgb(230, 230, 231);
   background-color: rgb(251, 242, 233);
   background-color: rgb(45, 45, 43);
 }
@@ -164,15 +165,15 @@ article {
 /* CSS for Projects page */
 
 .box {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   display: inline-block;
   margin-bottom: 30px;
   margin-right: 25px;
   border-radius: 50%;
   text-align: center;
-  line-height: 300px;
-  font-size: 42px;
+  line-height: 250px;
+  font-size: 32px;
 }
 
 #box-1 {
@@ -193,8 +194,8 @@ article {
 }
 
 hr {
-  height: 3px;
-  padding-top: 5px;
+  height: 2px;
+  padding-top: 3px;
   background-color: rgb(170, 131, 122);
   /* background-color: #9b9278;; */
 }
@@ -228,8 +229,8 @@ hr {
 /* Images */
 img {
   display: inline-block;
-  max-width: 15%;
-  min-width: 15%;
+  max-width: 10%;
+  min-width: 10%;
 }
 
 /* Form CSS */
@@ -259,7 +260,6 @@ textarea {
   padding: 10px;
   width: 35%;
   border-radius: 5px;
-
   outline: none;
 }
 input[type='text']:hover,
@@ -340,7 +340,19 @@ th {
   background-color: #2dd60f;
   color: white;
 }
-
+.section-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 4;
+  height: 100% !important;
+  display: flex;
+  justify-content: space-evenly;
+}
 @media (max-width: 768px) {
   header,
   footer {
